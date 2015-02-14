@@ -1,0 +1,25 @@
+{
+  "name": "ukrposhta-json-proxy-server",
+  "version": "0.0.1",
+  "description": "NodeJS proxy server to have CORS compatible JSON API for Ukrposhta API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmytroyarmak/ukrposhta-json-proxy-server.git"
+  },
+  "author": "Dmytro Yarmak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmytroyarmak/ukrposhta-json-proxy-server/issues"
+  },
+  "homepage": "https://github.com/dmytroyarmak/ukrposhta-json-proxy-server",
+  "dependencies": {
+    "express": "^4.11.2",
+    "q": "^1.1.2",
+    "ukrposhta-api": "^0.1.1"
+  }
+}
