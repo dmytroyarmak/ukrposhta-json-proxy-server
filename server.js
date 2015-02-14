@@ -1,7 +1,16 @@
 var UkrposhtaApi = require('ukrposhta-api').UkrposhtaApi;
 var express = require('express');
+var morgan = require('morgan')
+
 var urkposhtaApiClient = new UkrposhtaApi();
 var app = express();
+
+app.use(morgan('combined'));
+
+app.use(function(req, res, next) {
+	res.setHeader('Access-Control-Allow-Origin', '*');
+	next();
+});
 
 app.get('/tracks/:id', function (req, res) {
     urkposhtaApiClient.getBarcodeInfo(req.params.id).then(function(barcodeInfo) {

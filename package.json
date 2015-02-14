@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dmytroyarmak/ukrposhta-json-proxy-server",
   "dependencies": {
     "express": "^4.11.2",
-    "q": "^1.1.2",
+    "morgan": "^1.5.1",
     "ukrposhta-api": "^0.1.1"
   }
 }
